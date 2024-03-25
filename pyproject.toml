@@ -1,0 +1,26 @@
+[project]
+name = "sharkadm-nodc-dependencies"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Magnus Wenzer", email = "magnus.wenzer@smhi.se"},
+]
+dependencies = [
+    "nodc-codes @ git+https://github.com/nodc-sweden/nodc-codes.git@v0.1.0",
+    "nodc-bvol @ git+https://github.com/nodc-sweden/nodc-bvol.git@v0.1.0",
+    "nodc-worms @ git+https://github.com/nodc-sweden/nodc-worms.git@v0.1.0",
+    "nodc-station @ git+https://github.com/nodc-sweden/nodc-station.git@v0.1.0",
+    "nodc-dyntaxa @ git+https://github.com/nodc-sweden/nodc-dyntaxa.git@v0.1.0",
+    "nodc-geography @ git+https://github.com/nodc-sweden/nodc-geography.git@v0.1.0",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
